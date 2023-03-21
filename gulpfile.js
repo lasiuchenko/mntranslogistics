@@ -11,8 +11,12 @@ const clean = require('gulp-clean');
 function styles() {
 	return src('app/scss/style.scss')
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
-		.pipe(concat('style.min.css'))
 		.pipe(scss({ outputStyle: 'compressed' }))
+		.pipe(concat('style.min.css'))
+		.pipe(autoprefixer({
+            overrideBrowserslist: ['last 10 versions'],
+            grid: true
+        }))
 		.pipe(dest('app/css'))
 		.pipe(browserSync.stream())
 }
@@ -50,6 +54,7 @@ function watching() {
 	watch(['app/scss/**/*.scss'], styles)
 	watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
 	watch(['app/**/*.html']).on('change', browserSync.reload)
+	
 }
 
 function browsersync() {

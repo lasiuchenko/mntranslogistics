@@ -1,0 +1,23 @@
+.about{
+	  // align-self: center;
+    padding: 45px 0;
+    // background-image: url(../images/background-about.jpg);
+    // background-attachment: fixed;
+    // overflow: hidden;  background-repeat: no-repeat;
+		// background-size: auto;
+		// background-position: bottom center;
+
+		&__title{
+			margin-bottom: 25px;
+		}
+
+		&__desc-wrap{
+			display: flex;
+			justify-content: space-between;
+			text-align: justify;
+		}
+
+		&__desc{
+			max-width: 45%;
+		}
+}
