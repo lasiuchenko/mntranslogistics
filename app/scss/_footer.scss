@@ -13,14 +13,24 @@
 		&-item{
 			position: relative;
 			padding: 0 25px;
-		}
 
-		// &::before{
-		// 	content: '';
-		// 	position: absolute;
-		// 	width: 30px;
-		// 	height: 30px;
-		// 	background-repeat: no-repeat;
-		// }
+			&::before{
+				content: "";
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				background-repeat: no-repeat;
+			}
+
+			&--mail::before{
+				background-image: url("../images/icon/contact/letter-icon.svg");
+			}
+			&--tel::before{
+				background-image: url("../images/icon/contact/phone-icon.svg");
+			}
+			&--point::before{
+				background-image: url("../images/icon/contact/location-icon.svg");
+			}
+		}
 	}
 }

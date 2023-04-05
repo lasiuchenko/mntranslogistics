@@ -17,20 +17,18 @@
 		left: 0;
 		width: 60px;
 		height: 60px;
+		background-repeat: no-repeat;
 		}
 
 		&--safe::before {
   		background-image: url("../images/icon/benefits/protect-icon.svg");
 		}
-
 		&--complex::before {
   		background-image: url("../images/icon/benefits/truck-icon.svg");
 		}
-
 		&--quality::before {
   		background-image: url("../images/icon/benefits/document-icon.svg");
 		}
-
 		&--democracy::before {
   		background-image: url("../images/icon/benefits/handshake-icon.svg");
 		}
