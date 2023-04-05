@@ -1,0 +1,68 @@
+.form {
+  width: 100%;
+  max-width: 540px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+	
+	&__wrap {
+  display: flex;
+  margin-bottom: 30px;
+	}
+
+	&__field {
+		border: none;
+		padding: 13px 15px;
+		background-color: #f6f6f8;
+		max-width: 255px;
+		width: 100%;
+		font-weight: 400;
+		color: #9c9cab;
+		transition: box-shadow 0.5s, color 0s;
+		border-radius: 5px;
+
+		&:hover::placeholder {
+		text-decoration: none;
+		color: #000;
+		}
+
+		&--textarea {
+			width: 100%;
+			max-width: 540px;
+			height: 115px;
+			resize: none;
+		}
+	}
+
+	&__field:focus {
+	outline: 0;
+	box-shadow: 0 0 0 3px rgba(49,52,84, 0.3);
+	}
+
+	&__label {
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	&__name {
+		margin-right: 30px;
+	}
+
+	&__name,
+	&__number {
+		max-width: 255px;
+		width: 100%;
+	}
+
+	&__msg {
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		display: block;
+		padding: 10px 50px;
+		background-color: #313454;
+		color: #fff;
+		border-radius: 5px;
+	}
+}

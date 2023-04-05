@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="body">
 	<header class="header" style="background-image: url(images/background-image.jpeg)">
 		<div class="header__wrap">
 			<div class="container">
@@ -20,22 +20,22 @@
 					</a>
 					<ul class="menu">
 						<li class="menu__item">
-							<a class="menu__link" href="#">O Firmie</a>
+							<a class="menu__link" href="#about">O Firmie</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#">Nasza flota</a>
+							<a class="menu__link" href="#ourCars">Nasza flota</a>
 						</li>
-						<li class="menu__item">
+						<!-- <li class="menu__item">
 							<a class="menu__link" href="#">Współpraca</a>
-						</li>
+						</li> -->
 						<li class="menu__item">
-							<a class="menu__link" href="#">Wycena transportu</a>
+							<a class="menu__link" href="#benefits">Korzyści</a>
 						</li>
-						<li class="menu__item">
+						<!-- <li class="menu__item">
 							<a class="menu__link" href="#">Polityka prywatności</a>
-						</li>
+						</li> -->
 						<li class="menu__item">
-							<a class="menu__link" href="#">Kontakt</a>
+							<a class="menu__link" href="#contact">Kontakt</a>
 						</li>
 					</ul>
 				</nav>
@@ -51,7 +51,7 @@
 		</div>
 	</header>
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<h2 class="about__title">O firmie</h2>
 			<div class="about__desc-wrap">
@@ -89,24 +89,112 @@
 		</div>
 	</section>
 
+	<section class="ourCars" id="ourCars">
+		<div class="container">
+			<h2 class="about__title">Nasza flota</h2>
+		</div>
+	</section>
+
+	<section class="benefits" id="benefits">
+		<div class="container">
+			<h2 class="about__title">Korzyści</h2>
+
+			<ul class="benefits__list">
+				<li class="benefits__item benefits__item--safe">
+					<h3 class="benefits__title">Bezpieczeństwo</h3>
+					<div class="benefits__text">
+						<p>
+							Każda przesyłka jest ubezpieczona do 300 000 euro. To pozwoli Ci zachować
+							spokój w każdej sytuacji.
+						</p>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<h3 class="benefits__title benefits__title--complex">Kompleksowa realizacja
+					</h3>
+					<div class="benefits__text">
+						<p>
+							Przewozy od 100 kg do 25 ton (w tym ADR, ładunki ponadgabarytowe, ładunki
+							płynne) naszym klientom zapewniamy kompleksową i częściową obsługę.
+						</p>
+					</div>
+				</li>
+				<li class="benefits__item benefits__item--quality">
+					<h3 class="benefits__title">Jakość</h3>
+					<div class="benefits__text">
+						<p>
+							Korzystamy również z floty wysokiej jakości Podwykonawców, pozwalających
+							na przewóz towarów ponadgabarytowych lub towarów wymagających szczególnych
+							warunków Przewozu
+						</p>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<h3 class="benefits__title benefits__title--democracy">Demokracja</h3>
+					<div class="benefits__text">
+						<p>
+							Możliwość zapłaty w dowolny dogodny sposób. Co świadczy o otwartości i
+							lojalności naszej firmy
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<h2 class="about__title">Kontakt</h2>
+			<div class="contact__wrap">
+
+
+				<form class="form" method="post">
+					<div class="form__wrap">
+						<div class="form__name">
+							<label class="form__label" for="name">Imię</label>
+							<input class="form__field" type="text" id="name" name="name"
+								placeholder="Robert" required />
+						</div>
+
+						<div class="form__number">
+							<label class="form__label" for="number">Telefon</label>
+							<input class="form__field" type="tel" id="number" name="tel"
+								placeholder="+48712222222" required />
+						</div>
+					</div>
+
+					<div class="form__msg">
+						<label class="form__label" for="msg">Tekst</label>
+						<textarea class="form__field form__field--textarea" id="msg" name="message"
+							placeholder="Tekst wiadomości" required></textarea>
+					</div>
+
+					<button class="form__btn" type="submit">Wysłać</button>
+				</form>
+
+				<div class="contact__map">
+					<img src="images/background-map.jpg" alt="Karta google">
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__wrap">
+			<div? class="footer__wrap">
 				<a class="logo" href="#body">
 					<img class="logo__img" src="images/logo/logo.svg" width="200" height="60"
 						alt="Logotyp firmy MN Trans Logistics">
 				</a>
-
-				<address class="footer__contact">
-					<a class="footer__contact-item"
+				<address class="footer__address">
+					<a class="footer__address-item"
 						href="mailto:mntranslogistiks@gmail.com">mntranslogistiks@gmail.com</a>
-					<a class="footer__contact-item" href="tel:+48536404547">+48536404547</a>
-					<span class="footer__address">
+					<a class="footer__address-item" href="tel:+48536404547">+48536404547</a>
+					<span class="footer__address-item">
 						ul. Sądowa 2/11, 20-029 Lublin
 					</span>
 				</address>
-			</div>
+		</div>
 		</div>
 	</footer>
 	<script src="js/main.min.js"></script>

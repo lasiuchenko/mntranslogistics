@@ -1,13 +1,26 @@
 .footer{
-	padding: 60px 0;
+	padding: 30px 0;
 
 	&__wrap{
 		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-	&__contact{
+	
+	&__address{
 		display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
+
+		&-item{
+			position: relative;
+			padding: 0 25px;
+		}
+
+		// &::before{
+		// 	content: '';
+		// 	position: absolute;
+		// 	width: 30px;
+		// 	height: 30px;
+		// 	background-repeat: no-repeat;
+		// }
 	}
 }

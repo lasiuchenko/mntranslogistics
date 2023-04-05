@@ -1,0 +1,11 @@
+.contact{
+	&__wrap{
+		display: flex;
+		justify-content: space-between;
+	}	
+
+	&__map{
+		width: 100%;
+  max-width: 580px;
+	}
+}
